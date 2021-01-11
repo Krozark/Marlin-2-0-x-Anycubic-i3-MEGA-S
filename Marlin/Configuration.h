@@ -78,7 +78,7 @@
  * 
  */
 //#define KNUTWURST_MEGA
-//#define KNUTWURST_MEGA_S
+#define KNUTWURST_MEGA_S
 //#define KNUTWURST_MEGA_X
 //#define KNUTWURST_MEGA_P
 
@@ -137,7 +137,7 @@
  * PLEASE READ THE WARNING ABOVE!
  * 
  */
-//#define KNUTWURST_BLTOUCH
+#define KNUTWURST_BLTOUCH
 
 /*
  * This feature is for debugging purpose only.
@@ -286,7 +286,7 @@
  * on the upper left of the PCB silkscreen.
  */
 #ifndef MOTHERBOARD
-  //#define MOTHERBOARD BOARD_TRIGORILLA_14  // Is normally set by PlatformIO
+  #define MOTHERBOARD BOARD_TRIGORILLA_14  // Is normally set by PlatformIO
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
@@ -1249,8 +1249,8 @@
  * Specify a Probe position as { X, Y, Z }
  */
 #if ENABLED(KNUTWURST_BLTOUCH)
-    #define NOZZLE_TO_PROBE_OFFSET { -2, -25, 0 } //https://www.thingiverse.com/thing:2824005
-    //#define NOZZLE_TO_PROBE_OFFSET { 29, -15, 0 } //X-Carriage
+    //#define NOZZLE_TO_PROBE_OFFSET { -2, -25, 0 } //https://www.thingiverse.com/thing:2824005
+    #define NOZZLE_TO_PROBE_OFFSET { 29, -15, 0 } //X-Carriage https://www.thingiverse.com/thing:3537449
 #endif
 
 #if DISABLED(KNUTWURST_BLTOUCH)
