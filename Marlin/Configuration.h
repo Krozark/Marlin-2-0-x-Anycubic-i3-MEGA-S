@@ -646,10 +646,10 @@
   // #define  DEFAULT_Ki 0.97
   // #define  DEFAULT_Kd 54.19
 
-  // i3 Mega stock v5 hotend + MK4
-  #define DEFAULT_Kp 15.45
-  #define DEFAULT_Ki 0.97
-  #define DEFAULT_Kd 61.72
+  // i3 Mega stock v5 hotend + MK4 for PLA (192°C)
+  #define DEFAULT_Kp 17.40
+  #define DEFAULT_Ki 1.12
+  #define DEFAULT_Kd 67.36
 
   // Ultimaker
   // #define DEFAULT_Kp 22.2
