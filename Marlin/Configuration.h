@@ -646,9 +646,9 @@
   // #define  DEFAULT_Ki 0.97
   // #define  DEFAULT_Kd 54.19
 
-  // i3 Mega stock v5 hotend + MK4 for PLA (192°C)
-  #define DEFAULT_Kp 17.40
-  #define DEFAULT_Ki 1.12
+  // i3 Mega stock v5 hotend + MK4 for PLA (194°C)
+  #define DEFAULT_Kp 17.21
+  #define DEFAULT_Ki 1.09
   #define DEFAULT_Kd 67.36
 
   // Ultimaker
@@ -924,7 +924,9 @@
 #endif
 
 #if ENABLED(KNUTWURST_MEGA_S)
-    #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 392 }
+    // #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 392 }
+    //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.64, 79.64, 397.66, 477.95 }
+    #define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.64, 79.64, 397.66, 474.53 }
 #endif
 
 #if ENABLED(KNUTWURST_MEGA_X)
@@ -1260,7 +1262,7 @@
  */
 #if ENABLED(KNUTWURST_BLTOUCH)
     //#define NOZZLE_TO_PROBE_OFFSET { -2, -25, 0 } //https://www.thingiverse.com/thing:2824005
-    #define NOZZLE_TO_PROBE_OFFSET { 29, -15, 0 } //X-Carriage https://www.thingiverse.com/thing:3537449
+    #define NOZZLE_TO_PROBE_OFFSET { 29, -15, -0.96 } //X-Carriage https://www.thingiverse.com/thing:3537449
 #endif
 
 #if DISABLED(KNUTWURST_BLTOUCH)
